@@ -57,7 +57,7 @@
 
     // Begin internal utility to clean bookmark
     getCleanAnchorString = function () {
-      return String( document.location.href.split('#')[1] || '' )
+      return String( document.location.hash )
         // remove any leading pounds or bangs
         .replace( configMap.regex_anchor_clean1 , '' )
         // snip off after question-mark ( a ClickStreet bug )

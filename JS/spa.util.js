@@ -9,19 +9,15 @@
 * MIT License
 *
 */
-
 /*jslint browser : true, continue : true,
 devel : true, indent : 2, maxerr : 50,
 newcap : true, nomen : true, plusplus : true,
 regexp : true, sloppy : true, vars : false,
 white : true
 */
-
 /*global $, spa */
-
 spa.util = (function () {
     var makeError, setConfigMap;
-
     // Begin Public constructor /makeError/
     // Purpose: a convenience wrapper to create an error object
     // Arguments:
@@ -39,7 +35,6 @@ spa.util = (function () {
         return error;
     };
     // End Public constructor /makeError/
-
     // Begin Public method /setConfigMap/
     // Purpose: Common code to set configs in feature modules
     // Arguments:
@@ -63,14 +58,13 @@ spa.util = (function () {
                 else {
                     error = makeError( 'Bad Input',
                     'Setting config key |' + key_name + '| is not supported'
-);
+                    );
                     throw error;
                 }
             }
         }
     };
     // End Public method /setConfigMap/
-
     return {
         makeError: makeError,
         setConfigMap: setConfigMap
